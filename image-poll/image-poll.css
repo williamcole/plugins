@@ -1,0 +1,676 @@
+/* Image Poll CSS */
+#poll-container {
+  background: url("../images/image-poll-bg.png") top left repeat-x;
+  clear: both;
+  margin: 0;
+  padding: 0.75em 1em;
+}
+
+#poll-container .pollarea {
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* poll header */
+.wbc100-image-poll .entry-header {
+  display: none;
+}
+
+.imagepoll-banner,
+.imagepoll-banner-480 {
+  margin: 0 auto 10px;
+}
+
+.imagepoll-banner-480 {
+  display: none;
+}
+
+.imagepoll-banner img,
+.imagepoll-banner-480 img {
+  width: 100%;
+}
+
+#poll-container .pollarea h1 {
+  color: #000;
+  font: 2em/1.2em "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+#poll-container .pollarea h1 span.vote {
+  background: url("../images/image-poll-vote-now.png") no-repeat;
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  top: 0;
+  width: 77px;
+  height: 46px;
+  text-indent: -9999px;
+}
+
+.entry-sharing {
+  display: none;
+}
+
+#poll-container .pollarea .entry-sharing {
+  border: 0;
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+#poll-container .entry-share-buttons li > a {
+  display: none;
+}
+
+#poll-container .pollarea .entry-sharing li {
+  display: inline;
+}
+
+#poll-container p.votetext {
+  color: #000;
+  font: normal 32px Georgia, 'Times New Roman', 'Times', serif;
+  text-align: center;
+  position: absolute;
+  top: 700px;
+  width: 100%;
+}
+
+/* poll area */
+#poll-container .pollarea.closed .closed-message {
+  background: #000;
+  position: absolute;
+  top: 175px;
+  width: 100%;
+  z-index: 30;
+  opacity: .8;
+  filter: "alpha(opacity=80)";
+  /*for Internet Explorer 8*/
+  filter: alpha(opacity=80);
+  /*for Internet Explorer 6/7*/
+}
+
+#poll-container .pollarea.closed .closed-message h3 {
+  color: #FFF;
+  font: "arial black",arial,sans-serif;
+  font-size: 1.875em;
+  font-weight: bold;
+  line-height: 1.06667em;
+  letter-spacing: -0.03em;
+  padding: 2em;
+  text-align: center;
+}
+
+#poll-container .pollarea .vs {
+  background: url("../images/image-poll-vs.png") no-repeat;
+  background-size: cover;
+  _background: 0;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/image-poll-vs.png',sizingMethod='crop');
+  color: #FFF;
+  font: normal 18px "arial black",arial,sans-serif;
+  width: 134px;
+  height: 134px;
+  text-align: center;
+  text-indent: -9999px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 225px;
+  left: 40%;
+  z-index: 20;
+}
+
+#poll-container .pollarea .vote1,
+#poll-container .pollarea .vote2 {
+  position: relative;
+  width: 48%;
+}
+
+#poll-container .pollarea .vote1 {
+  float: left;
+}
+
+#poll-container .pollarea .vote2 {
+  float: right;
+}
+
+#poll-container .pollarea .vote1 a,
+#poll-container .pollarea .vote2 a {
+  color: #FFF;
+  cursor: pointer;
+}
+
+#poll-container .pollarea.open .vote1 a:hover,
+#poll-container .pollarea.open .vote2 a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#poll-container .pollarea.open .vote1 .vote-hover,
+#poll-container .pollarea.open .vote2 .vote-hover {
+  background: #EC2101;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #FFF;
+  cursor: pointer;
+  font: normal 24px/1em Arial, sans-serif;
+  margin: 0;
+  padding: 0.5em;
+  position: absolute;
+  width: 33%;
+  height: auto;
+  top: 185px;
+  left: 33%;
+  z-index: 100;
+  text-align: center;
+  visibility: hidden;
+}
+
+#poll-container .pollarea.closed .vote-hover {
+  display: none;
+}
+
+#poll-container .pollarea.open .vote1 a:hover .vote-hover,
+#poll-container .pollarea.open .vote2 a:hover .vote-hover {
+  cursor: pointer;
+  visibility: visible;
+}
+
+#poll-container .pollarea.open a:hover img {
+  opacity: .4;
+  filter: "alpha(opacity=40)";
+  /*for Internet Explorer 8*/
+  filter: alpha(opacity=40);
+  /*for Internet Explorer 6/7*/
+}
+
+#poll-container .pollarea .vote1 span,
+#poll-container .pollarea .vote2 span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#poll-container .pollarea .image-text {
+  width: 70%;
+}
+
+#poll-container .pollarea .vote2 .image-text {
+  float: right;
+}
+
+#poll-container .pollarea a h3 {
+  clear: both;
+  color: #000;
+  display: block;
+  font-size: 1.875em;
+  font-weight: bold;
+  line-height: 1.06667em;
+  letter-spacing: -0.03em;
+  margin: 0;
+  padding: 0;
+  font: "arial black",arial,sans-serif;
+}
+
+#poll-container .pollarea a:hover h3 {
+  color: #000;
+}
+
+#poll-container .pollarea .subtitle {
+  color: #EA2201;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+#poll-container .pollarea .description {
+  color: #000;
+  font-size: 13px;
+  line-height: 1.3em;
+}
+
+#poll-container .pollarea .vote2 a h3,
+#poll-container .pollarea .vote2 a .subtitle,
+#poll-container .pollarea .vote2 a .description {
+  text-align: right;
+}
+
+/* after poll */
+#poll-after {
+  clear: both;
+  text-align: center;
+}
+
+#poll-deck {
+  color: #000;
+  font: normal 32px Georgia, 'Times New Roman', 'Times', serif;
+  padding: 20px 0;
+}
+
+/* poll results */
+#poll-container .resultarea {
+  clear: both;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 475px;
+  left: 35%;
+  z-index: 200;
+}
+
+#poll-container .resultarea .share-text {
+  color: #EA2201;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 0 0;
+  text-align: center;
+}
+
+#poll-container .resultarea #twitter-button,
+#poll-container .resultarea #facebook-button {
+  color: #FFF;
+  display: inline-block;
+  margin: 5px;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+}
+
+#poll-container .resultarea #twitter-button:hover,
+#poll-container .resultarea #facebook-button:hover {
+  cursor: pointer;
+}
+
+#poll-container .resultarea #twitter-button {
+  background: url("../images/image-poll-share-twt.png") no-repeat;
+}
+
+#poll-container .resultarea #facebook-button {
+  background: url("../images/image-poll-share-fb.png") no-repeat;
+}
+
+#poll-container .resultarea .result1,
+#poll-container .resultarea .result2 {
+  width: 47%;
+}
+
+#poll-container .resultarea .result1 {
+  float: left;
+}
+
+#poll-container .resultarea .result2 {
+  float: right;
+}
+
+#poll-container .resultarea .percent {
+  color: #EA2201;
+  font: bold 36px arial,sans-serif;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+#poll-container .resultarea h6 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+
+#poll-container .resultarea .thumb img {
+  width: 100%;
+}
+
+/* result area */
+#poll-container #poll-results {
+  text-align: center;
+}
+
+#poll-container .resultarea {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  position: relative;
+  left: 0;
+  top: -90px;
+  z-index: 200;
+}
+
+#poll-container.end .resultarea {
+  top: 0;
+}
+
+/* end slide */
+#poll-container .endslide {
+  position: relative;
+}
+
+#poll-container .endslide .imgcont {
+  float: left;
+  width: 50%;
+}
+
+#poll-container .endslide .imgcont img {
+  border: 0;
+  width: 100%;
+}
+
+#poll-container .endslide .txtcont {
+  float: right;
+  margin-top: 10%;
+  width: 45%;
+}
+
+#poll-container .endslide .txtcont h2 {
+  color: #000;
+  font: normal 32px/1em "arial black",arial,sans-serif;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5em;
+}
+
+#poll-container .endslide .txtcont h2 a {
+  color: #000;
+}
+
+#poll-container .endslide .txtcont h3 {
+  color: #EA2001;
+  font: normal 26px/1.3em "arial black",arial,sans-serif;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5em;
+}
+
+#poll-container .endslide .txtcont h3 a {
+  color: #EA2001;
+}
+
+#poll-container .endslide .txtcont p.deck {
+  color: #000;
+  font: normal 12px/18px arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#poll-container .endslide .txtcont p.deck a,
+#poll-container .endslide .txtcont p.deck a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#poll-container .endslide .txtcont p.share {
+  color: #EA2201;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#poll-container .endslide .txtcont p.share a,
+#poll-container .endslide .txtcont p.share a:hover {
+  color: #EA2001;
+  text-decoration: none;
+}
+
+#poll-container .endslide .txtcont .entry-sharing {
+  border: 0;
+}
+
+#poll-container .endslide .txtcont .entry-share-buttons li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#poll-container .endslide .txtcont .entry-share-buttons li li {
+  display: inline-block;
+  width: 30%;
+}
+
+#poll-container .endslide .txtcont .entry-share-buttons li li.share-fb {
+  position: relative;
+  top: -4px;
+}
+
+/* poll forms */
+#poll-container form#submitform,
+#poll-container form#submitform input,
+#poll-container #submitiframe {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 950px) {
+  #poll-container p.votetext {
+    top: 775px;
+  }
+
+  #poll-container .resultarea {
+    width: 28%;
+  }
+}
+/* ipad portrait */
+@media screen and (max-width: 780px) {
+  #poll-container .resultarea {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 720px) {
+  #poll-container .pollarea .vs {
+    width: 80px;
+    height: 80px;
+    top: 100px;
+  }
+
+  #poll-container p.votetext {
+    top: 575px;
+  }
+
+  #poll-container .resultarea {
+    width: 28%;
+  }
+
+  #poll-container .pollarea .vs {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    top: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #poll-container .pollarea a h3 {
+    font-size: 1.3em;
+  }
+
+  #poll-container .resultarea .percent {
+    font-size: 20px;
+  }
+
+  #poll-container .endslide .txtcont p.share {
+    display: none;
+  }
+
+  #poll-container .pollarea .entry-sharing {
+    margin-top: 10px;
+  }
+
+  /* share buttons */
+  .entry-share-buttons ul {
+    display: block;
+    background: none;
+    border: 0;
+    width: auto;
+    position: static;
+    padding: 0;
+  }
+
+  #poll-container .pollarea.open .vote1 .vote-hover,
+  #poll-container .pollarea.open .vote2 .vote-hover {
+    top: 150px;
+  }
+}
+@media screen and (max-width: 553px) {
+  #poll-container .pollarea.closed .closed-message {
+    top: 150px;
+  }
+
+  #poll-container .pollarea.closed .closed-message h3 {
+    font-size: 1.6em;
+    padding: 1em;
+  }
+
+  #poll-container .pollarea h1 {
+    font-size: 1.6em;
+  }
+
+  #poll-container .pollarea {
+    position: relative;
+    width: 100%;
+  }
+
+  #poll-container .pollarea h1 span.vote {
+    display: none;
+  }
+
+  #poll-container .resultarea h6 {
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  #poll-container .votetext {
+    clear: both;
+  }
+
+  #poll-container .pollarea .vs {
+    width: 75px;
+    height: 75px;
+    margin-left: 0;
+    top: 170px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #poll-container .pollarea.closed .closed-message {
+    top: 125px;
+  }
+
+  #poll-container .pollarea.closed .closed-message h3 {
+    font-size: 1.2em;
+  }
+
+  #poll-container .pollarea h1 {
+    font-size: 1.4em;
+  }
+
+  #poll-container .pollarea a h3 {
+    font-size: 1.2em;
+  }
+
+  #poll-container .endslide .txtcont p.share {
+    position: absolute;
+    top: 265px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .imagepoll-banner {
+    display: none;
+  }
+
+  .imagepoll-banner-480 {
+    display: block;
+  }
+
+  #poll-container .pollarea .vs {
+    top: 170px;
+  }
+
+  #poll-container .pollarea.open .vote1 .vote-hover,
+  #poll-container .pollarea.open .vote2 .vote-hover {
+    top: 100px;
+  }
+}
+/* iphone portrait */
+@media screen and (max-width: 390px) {
+  #poll-container .pollarea .entry-sharing li.share-fb,
+  #poll-container .pollarea .entry-sharing li.share-tw,
+  #poll-container .pollarea .entry-sharing li.share-gp {
+    display: inline-block;
+    width: 80px;
+  }
+
+  #poll-container .pollarea .entry-sharing li.share-fb {
+    position: relative;
+    top: -4px;
+  }
+
+  #poll-container .pollarea .vote1,
+  #poll-container .pollarea .vote2 {
+    min-height: 0;
+  }
+
+  #poll-container p.votetext {
+    top: 350px;
+  }
+
+  #poll-container .pollarea.open .vs {
+    width: 60px;
+    height: 60px;
+    top: 120px;
+  }
+
+  #poll-container p.votetext {
+    font-size: 1.4em;
+  }
+
+  #poll-container .pollarea.open .vote1 .vote-hover,
+  #poll-container .pollarea.open .vote2 .vote-hover {
+    font-size: 18px;
+    top: 68px;
+    left: 28%;
+    width: 30%;
+  }
+
+  #poll-container .pollarea .image-text {
+    padding-bottom: 0;
+  }
+
+  /* share buttons */
+  #poll-container .endslide .txtcont .entry-share-buttons li {
+    padding-bottom: 5px;
+  }
+
+  #poll-container .resultarea {
+    width: 30%;
+  }
+
+  #poll-container .resultarea .result1 .text,
+  #poll-container .resultarea .result2 .text {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #poll-container .resultarea .percent {
+    font-size: 20px;
+  }
+
+  #poll-container .resultarea h6 {
+    display: none;
+  }
+
+  /* end slide */
+  #poll-container .endslide .txtcont {
+    margin-top: 0;
+  }
+
+  #poll-container .endslide .txtcont h2 {
+    font-size: 24px;
+  }
+
+  #poll-container .endslide .txtcont h3 {
+    font-size: 20px;
+  }
+}
