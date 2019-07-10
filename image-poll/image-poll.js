@@ -12,7 +12,7 @@ var devhost = ( hostname.indexOf("devwp.company.com") > -1 );
 		
 		// set bitly share data vars
 		bitly_account : 'clientdotcom',
-		bitly_apikey : 'R_d514a81e85b444dfbbc234f661e7c38a',
+		bitly_apikey : 'XXXXXXXXXXXX',
 			
 		// set poll base url based depending on if this is Dev or Prod
 		pollbaseurl : devhost ? 'http://rc-profiles.company.net/brands/Company/sections/polls/articles/' : 'http://profiles.company.net/brands/Company/sections/polls/articles/',
