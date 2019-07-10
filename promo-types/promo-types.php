@@ -1,6 +1,6 @@
 <?php
 /**
-  Plugin Name: Time Promo Types
+  Plugin Name: Promo Types
   Plugin URI: http://company.com
   Description: Allows users to add a promo type to a post, with corresponding filters for omniture variables
   Author: William Cole
